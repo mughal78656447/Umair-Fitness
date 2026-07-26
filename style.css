@@ -44,7 +44,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 22px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -67,10 +67,6 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-.btn-nav:hover {
-    background-color: #e02d31;
-}
-
 /* Buttons */
 .btn-primary {
     display: inline-block;
@@ -83,7 +79,6 @@ nav ul li a:hover {
     border: none;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 15px;
 }
 
 .btn-primary:hover {
@@ -99,21 +94,32 @@ nav ul li a:hover {
     font-weight: 600;
     border-radius: 6px;
     transition: 0.3s;
-    font-size: 14px;
 }
 
 .btn-secondary:hover {
     background-color: #ff3b3f;
 }
 
-/* Hero Section */
+/* Hero Section with Bodybuilder Picture */
 .hero {
-    height: 90vh;
-    background: linear-gradient(rgba(13, 15, 18, 0.75), rgba(13, 15, 18, 0.9)), url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1600') center/cover no-repeat;
+    height: 92vh;
+    background: linear-gradient(rgba(13, 15, 18, 0.65), rgba(13, 15, 18, 0.9)), 
+                url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1600') center/cover no-repeat;
     display: flex;
     align-items: center;
     padding: 0 8%;
     margin-top: 60px;
+}
+
+.location-badge {
+    background: #ff3b3f;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .hero-content h1 {
@@ -125,7 +131,7 @@ nav ul li a:hover {
 
 .hero-content p {
     font-size: 18px;
-    color: #94a3b8;
+    color: #cbd5e1;
     max-width: 600px;
     margin-bottom: 30px;
 }
@@ -139,42 +145,27 @@ section {
 h2 {
     font-size: 36px;
     margin-bottom: 15px;
-    font-weight: 700;
 }
 
 .section-desc {
     color: #94a3b8;
     max-width: 700px;
     margin: 0 auto 40px auto;
-    font-size: 16px;
 }
 
-/* Admission Fee Highlight Box */
+/* Fee Banner */
 .admission-banner {
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    border: 1px solid #334155;
+    background: #1e293b;
     border-left: 5px solid #ff3b3f;
-    padding: 25px 30px;
+    padding: 25px;
     border-radius: 8px;
     max-width: 800px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 40px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
     text-align: left;
-}
-
-.admission-info h3 {
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 5px;
-}
-
-.admission-info p {
-    color: #94a3b8;
-    font-size: 14px;
 }
 
 .admission-price {
@@ -183,7 +174,7 @@ h2 {
     color: #ff3b3f;
 }
 
-/* Cards & Layouts */
+/* Cards Layout */
 .cards-container {
     display: flex;
     justify-content: center;
@@ -191,23 +182,18 @@ h2 {
     flex-wrap: wrap;
 }
 
-/* Plans Section */
 .plan-card {
     background: #161922;
     padding: 35px 25px;
     border-radius: 10px;
     width: 320px;
     border: 1px solid #232a3b;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     text-align: left;
     position: relative;
 }
 
 .plan-card.featured {
     border: 2px solid #ff3b3f;
-    background: #1c202c;
 }
 
 .badge {
@@ -220,13 +206,6 @@ h2 {
     font-weight: 700;
     padding: 4px 12px;
     border-radius: 20px;
-    text-transform: uppercase;
-}
-
-.plan-card h3 {
-    font-size: 22px;
-    color: #fff;
-    margin-bottom: 10px;
 }
 
 .plan-card .price {
@@ -236,33 +215,22 @@ h2 {
     color: #ff3b3f;
 }
 
-.plan-card .price span {
-    font-size: 14px;
-    color: #94a3b8;
-    font-weight: 400;
-}
-
 .plan-card ul {
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .plan-card ul li {
-    margin-bottom: 12px;
-    color: #cbd5e1;
+    margin-bottom: 10px;
     font-size: 14px;
-    display: flex;
-    align-items: center;
 }
 
 .plan-card ul li::before {
-    content: "✓";
+    content: "✓ ";
     color: #ff3b3f;
-    font-weight: bold;
-    margin-right: 10px;
 }
 
-/* Supplements Store Section */
+/* Supplements Section */
 .supplements {
     background: #12151c;
 }
@@ -272,14 +240,16 @@ h2 {
     border: 1px solid #283044;
     border-radius: 10px;
     width: 330px;
-    padding: 25px;
+    padding: 20px;
     text-align: left;
-    transition: 0.3s;
 }
 
-.supp-card:hover {
-    transform: translateY(-5px);
-    border-color: #ff3b3f;
+.img-wrapper img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
 }
 
 .supp-tag {
@@ -289,20 +259,6 @@ h2 {
     font-size: 12px;
     font-weight: 700;
     border-radius: 4px;
-    display: inline-block;
-    margin-bottom: 12px;
-}
-
-.supp-card h3 {
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 8px;
-}
-
-.supp-card p {
-    color: #94a3b8;
-    font-size: 14px;
-    margin-bottom: 15px;
 }
 
 .supp-details {
@@ -310,26 +266,35 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #2a3447;
 }
 
 .supp-price {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #38bdf8;
 }
 
-/* Enrollment Form Section */
-.enrollment {
-    background: #0d0f12;
+/* Location Section */
+.location-section {
+    background: #161922;
 }
 
+.location-box {
+    background: #0d0f12;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #232a3b;
+    text-align: center;
+}
+
+/* Enrollment Form */
 .form-container {
-    max-width: 650px;
+    max-width: 600px;
     margin: 0 auto;
     background: #161922;
-    padding: 40px;
+    padding: 35px;
     border-radius: 12px;
     border: 1px solid #232a3b;
     text-align: left;
@@ -342,26 +307,16 @@ h2 {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-weight: 600;
     font-size: 14px;
-    color: #cbd5e1;
 }
 
-.form-container input, 
-.form-container select {
+.form-container input, .form-container select {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     background: #0d0f12;
     border: 1px solid #2e374a;
     color: #fff;
     border-radius: 6px;
-    outline: none;
-    font-size: 15px;
-}
-
-.form-container input:focus, 
-.form-container select:focus {
-    border-color: #ff3b3f;
 }
 
 .fee-summary {
@@ -369,17 +324,13 @@ h2 {
     border: 1px dashed #ff3b3f;
     padding: 15px;
     border-radius: 6px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 14px;
-    color: #f1f5f9;
 }
 
-/* Footer */
 footer {
     background: #08090c;
-    text-align: center;
-    padding: 25px;
-    border-top: 1px solid #161922;
+    padding: 20px;
     font-size: 14px;
     color: #64748b;
 }
@@ -387,13 +338,9 @@ footer {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
     .hero-content h1 {
         font-size: 36px;
-    }
-    .admission-banner {
-        flex-direction: column;
-        text-align: center;
     }
 }
